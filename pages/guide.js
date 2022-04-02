@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 
 import imageUrlBuilder from "@sanity/image-url";
 
-import Header from "../components/commons/header";
-import Footer from "../components/commons/Footer";
+import Header from "../components/commons/header.js";
+import Footer from "../components/commons/footer.js";
 
 export default function Home({ posts }) {
   console.log(posts);

@@ -1,16 +1,16 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 
-import Header from "../components/commons/Header.js";
-import Hero from "../components/main/Hero.js";
-import Video from "../components/main/Video.js";
-import Problem from "../components/main/Problem.js";
-import Solution from "../components/main/Solution.js";
-import Expert from "../components/main/Expert.js";
-import Pricing from "../components/main/Pricing.js";
-import Faq from "../components/main/Faq.js";
-import Testimonial from "../components/main/Testimonial.js";
-import Footer from "../components/commons/Footer.js";
+import Header from "../components/commons/header.js";
+import Hero from "../components/main/hero.js";
+import Video from "../components/main/video.js";
+import Problem from "../components/main/problem.js";
+import Solution from "../components/main/solution.js";
+import Expert from "../components/main/expert.js";
+import Pricing from "../components/main/pricing.js";
+import Faq from "../components/main/faq.js";
+import Testimonial from "../components/main/testimonial.js";
+import Footer from "../components/commons/footer.js";
 
 export default function Home() {
   const [enableJoin, setEnableJoin] = useState(false);
