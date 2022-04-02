@@ -1,8 +1,8 @@
 import React from "react";
 
-import Header from "../../components/commons/Header.js";
+import Header from "../../components/commons/header.js";
 import AssessmentCarousel from "../../components/assessment/assessment-carousel.js";
-import Footer from "../../components/commons/Footer.js";
+import Footer from "../../components/commons/footer.js";
 
 const AssessmentQuestion = () => {
   return (

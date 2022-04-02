@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Head from "next/head";
 
-import Header from "../../components/commons/Header.js";
-import Footer from "../../components/commons/Footer.js";
+import Header from "../../components/commons/header.js";
+import Footer from "../../components/commons/footer.js";
 import AssessmentCareerForm from "../../components/assessment/assessment-career-form.js";
 import AssessmentDetails from "../../components/assessment/assessment-details.js";
 
