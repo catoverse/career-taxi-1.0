@@ -6,6 +6,6 @@
 
 @layer base {
   body {
-    @apply bg-[white] font-serif;
+    @apply bg-[white];
   }
 }
