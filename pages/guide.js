@@ -28,7 +28,7 @@ export default function Home({ posts }) {
         posts.map((p) => {
           return {
             ...p,
-            mainImage: imgBuilder.image(p.mainImage).width(500).height(250),
+            mainImage: imgBuilder.image(p.mainImage),
           };
         })
       );
@@ -58,25 +58,34 @@ export default function Home({ posts }) {
           ],
         }}
       /> */}
-      <div className="mx-auto my-16">
-        <div className="px-5">
-          {mappedPosts.length ? (
-            mappedPosts.map((p, index) => (
-              <div
-                onClick={() => router.push(`/post/${p.slug.current}`)}
-                key={index}
-              >
-                <img src={p.mainImage} alt={p.title} />
-                <h1 className="mt-6 mb-16 text-headFour font-semibold leading-tight">
-                  {p.title}
-                </h1>
-                {/* Description of the blog (First few lines) */}
-                {/* <p>{p.body[0].children[0].text.substring(0, 100) + "..."}</p> */}
-              </div>
-            ))
-          ) : (
-            <>No Guides Yet</>
-          )}
+      <div className="px-5 2xl:px-44">
+        <div className="my-16 mx-auto xl:container 2xl:container 3xl:max-w-screen-2xl">
+          <div className="lg:grid lg:grid-cols-3 lg:gap-5">
+            {mappedPosts.length ? (
+              mappedPosts.map((p, index) => (
+                <div
+                  onClick={() => router.push(`/post/${p.slug.current}`)}
+                  key={index}
+                  className="cursor-pointer"
+                >
+                  <div>
+                    <img
+                      className="h-64 w-full rounded-lg object-cover md:h-80 md:w-[500px] xl:w-full"
+                      src={p.mainImage}
+                      alt={p.title}
+                    />
+                  </div>
+                  <h1 className="mt-6 mb-16 text-headFour font-semibold leading-tight">
+                    {p.title}
+                  </h1>
+                  {/* Description of the blog (First few lines) */}
+                  {/* <p>{p.body[0].children[0].text.substring(0, 100) + "..."}</p> */}
+                </div>
+              ))
+            ) : (
+              <>No Guides Yet</>
+            )}
+          </div>
         </div>
       </div>
       <Footer />

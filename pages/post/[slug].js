@@ -23,8 +23,8 @@ const Post = ({ title, body, image }) => {
   return (
     <div>
       <Header />
-      <div className="my-20 px-5">
-        <h1 className="mb-12 text-center text-headThree font-bold leading-tight lg:mb-36 lg:text-headTwo">
+      <div className="my-20 px-5 md:mx-auto md:mb-44 md:max-w-3xl">
+        <h1 className="mb-12 text-center text-headThree font-bold leading-tight lg:mb-16 lg:text-headTwo">
           {title}
         </h1>
         {imageUrl && <img className="mb-10" src={imageUrl} alt="image" />}
@@ -32,7 +32,7 @@ const Post = ({ title, body, image }) => {
           <BlockContent blocks={body} />
         </div> */}
         <div>
-          {/* <PortableText
+          {/* <PortableText 
             className=""
             dataset="production"
             projectId="ffwh2kf8"
