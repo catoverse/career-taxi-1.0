@@ -79,13 +79,13 @@ const Post = ({ title, body, image }) => {
             serializers={{
               h2: (props) => (
                 <h2
-                  className="mb-5 mt-10 bg-yellow py-2 pl-2 text-headFour font-semibold leading-tight"
+                  className="mb-4 text-headThree font-bold leading-tight"
                   {...props}
                 />
               ),
               h4: (props) => (
                 <h4
-                  className="mt-8 mb-4 bg-[#FFC03375] py-2 pl-2 text-bodyOne font-medium leading-tight"
+                  className="mb-3 text-headFour font-semibold leading-tight"
                   {...props}
                 />
               ),
@@ -95,6 +95,7 @@ const Post = ({ title, body, image }) => {
                   {...props}
                 />
               ),
+              ul: (props) => <ul className="mb-5" {...props} />,
               li: (props) => <li className="ml-5 list-disc pb-2" {...props} />,
               link: ({ href, children }) => (
                 <a
