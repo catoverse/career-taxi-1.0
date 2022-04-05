@@ -14,7 +14,7 @@ module.exports = {
       "3xl": "1880px",
     },
     fontFamily: {
-      serif: ["Inter", "serif"],
+      serif: ["arial", "serif"],
     },
     fontSize: {
       headOne: "80px",
