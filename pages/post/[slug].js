@@ -99,7 +99,9 @@ const Post = ({ title, body, image }) => {
               link: ({ href, children }) => (
                 <a
                   href={href}
+                  target="_blank"
                   className="text-bodyOne text-black underline decoration-black underline-offset-2"
+                  rel="noreferrer"
                 >
                   {children}
                 </a>
