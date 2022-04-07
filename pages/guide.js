@@ -86,7 +86,7 @@ export default function Home({ posts }) {
                 </div>
               ))
             ) : (
-              <>No Guides Yet</>
+              <>No Career Guides Yet</>
             )}
           </div>
         </div>
