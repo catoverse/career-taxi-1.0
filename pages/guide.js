@@ -60,10 +60,10 @@ export default function Home({ posts }) {
       /> */}
       <div className="px-5 2xl:px-44">
         <div className="my-16 mx-auto xl:container 2xl:container 3xl:max-w-screen-2xl">
-          <h1 className="pb-10 text-center text-headThree font-bold">
+          <h1 className="mb-10 text-center text-headThree font-bold">
             Career Guides
           </h1>
-          <div className="my-10 lg:grid lg:grid-cols-3 lg:gap-5">
+          <div className="lg:grid lg:grid-cols-3 lg:gap-5">
             {mappedPosts.length ? (
               mappedPosts.map((p, index) => (
                 <div
