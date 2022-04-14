@@ -13,7 +13,8 @@ import Testimonial from "../components/main/testimonial.js";
 import Footer from "../components/commons/footer.js";
 
 export default function Home() {
-  const [enableJoin, setEnableJoin] = useState(false);
+  const [enableJoin, setEnableJoin] = useState(true);
+  const [paymentCaptured, setPaymentCaptured] = useState(false);
 
   // const [windowWidth, setWindowWidth] = useState("");
   // useEffect(() => {
@@ -111,7 +112,7 @@ export default function Home() {
       <Solution />
       <Expert />
       <Testimonial enableJoin={enableJoin} onClick={makePayment} />
-      {/* <Pricing enableJoin={enableJoin} onClick={makePayment} /> */}
+      <Pricing enableJoin={enableJoin} onClick={makePayment} />
       <Faq />
       <Footer />
       {/* <p className="fixed top-0 left-0 bg-yellow text-headThree">

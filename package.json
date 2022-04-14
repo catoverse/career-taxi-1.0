@@ -24,6 +24,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-youtube": "^7.14.0",
     "shortid": "^2.2.16",
+    "use-local-storage": "^2.3.6",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
