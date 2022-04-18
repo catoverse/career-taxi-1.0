@@ -7,6 +7,7 @@ import Video from "../components/main/video.js";
 import Problem from "../components/main/problem.js";
 import Solution from "../components/main/solution.js";
 import Expert from "../components/main/expert.js";
+import Guide from "../components/main/guide.js";
 import Pricing from "../components/main/pricing.js";
 import Faq from "../components/main/faq.js";
 import Testimonial from "../components/main/testimonial.js";
@@ -112,7 +113,8 @@ export default function Home() {
       <Solution />
       <Expert />
       <Testimonial enableJoin={enableJoin} onClick={makePayment} />
-      <Pricing enableJoin={enableJoin} onClick={makePayment} />
+      <Guide />
+      {/* <Pricing enableJoin={enableJoin} onClick={makePayment} /> */}
       <Faq />
       <Footer />
       {/* <p className="fixed top-0 left-0 bg-yellow text-headThree">

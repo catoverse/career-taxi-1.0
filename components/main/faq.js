@@ -68,7 +68,7 @@ const FaqData = [
 
 const Faq = () => {
   return (
-    <div className="mb-20 px-5">
+    <div className="mb-20 mt-14 px-5">
       <p className="mb-16 text-center text-headThree font-bold leading-tight lg:text-headTwo">
         FAQ&apos;s
       </p>
