@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
-import GuideImg from "/public/images/guide/guideimg.png";
+import GuidePreview from "/public/images/main/guide/guide-preview.svg";
 
 import useLocalStorage from "use-local-storage";
 
@@ -31,14 +30,14 @@ const Guides = () => {
     const data = await fetch("/api/razorpay", { method: "POST" }).then((t) =>
       t.json()
     );
-    console.log(data);
+
     var options = {
       key: process.env.RAZORPAY_KEY, // Enter the key ID genereated from the Dashboard
       name: "Career Taxi",
       currency: data.currency,
       amount: data.amount,
       order_id: data.id,
-      description: "Thank you for your test donation",
+      description: "",
       image: "https://cdn.razorpay.com/logos/IwG1SmDFGznPEq_original.png",
       handler: function (response) {
         // Validate payment at server - using webhooks is a better idea.
@@ -85,20 +84,19 @@ const Guides = () => {
       <Header />
       <div className="px-5 2xl:px-44">
         <div className="mx-auto mt-2 mb-20 xl:container 2xl:container 3xl:max-w-screen-2xl">
-          <div className="flex flex-col items-center justify-between lg:flex-row">
+          <div className="mt-5 flex flex-col items-center justify-between lg:flex-row-reverse">
             <div className="max-w-lg xl:max-w-xl">
-              <Image src={GuideImg} alt="guide" />
+              <Image src={GuidePreview} alt="guide" />
             </div>
-            <div className="mt-6 text-center lg:text-left">
-              <p className="mb-1 text-headThree font-bold lg:text-headTwo">
-                20 Curated Guides
+            <div className="mt-12 lg:text-left">
+              <p className="mb-4 max-w-lg text-headThree font-bold leading-tight lg:text-headTwo">
+                Everything you need to know before choosing a career
               </p>
-              <p className="max-w-2xl text-bodyTwo font-normal leading-6 lg:text-bodyOne lg:leading-7">
-                Velit malesuada turpis pretium quisque a libero, morbi. Sagittis
-                purus nisl pharetra, adipiscing scelerisque metus. Mi in
-                pulvinar adipiscing sed magna tellus. Tristique rhoncus duis
-                cursus morbi quam arcu ut.{" "}
-              </p>
+              <ul className="list-disc pl-5 text-bodyTwo font-normal leading-6 lg:text-bodyOne lg:leading-7">
+                <li>Understand the work </li>
+                <li>The challenges you&apos;ll encounter</li>{" "}
+                <li>Career path in that profession</li>
+              </ul>
               {!paymentCaptured ? (
                 <button
                   onClick={makePayment}
@@ -108,7 +106,7 @@ const Guides = () => {
                 </button>
               ) : (
                 <a href="https://career.taxi/" target="_blank" rel="noreferrer">
-                  <button className="mt-10 mr-4 rounded-xl bg-yellow bg-gradient-to-r from-yellow to-orange px-6 py-3 text-bodyTwo font-medium text-black duration-300 hover:-translate-y-1 hover:shadow-[0_10px_15px_-3px_rgba(255,192,51,0.5)]">
+                  <button className="mt-8 mr-4 rounded-xl bg-yellow bg-gradient-to-r from-yellow to-orange px-6 py-3 text-bodyTwo font-medium text-black duration-300 hover:-translate-y-1 hover:shadow-[0_10px_15px_-3px_rgba(255,192,51,0.5)]">
                     View Guides
                   </button>
                 </a>
