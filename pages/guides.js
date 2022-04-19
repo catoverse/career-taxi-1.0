@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Head from "next/head";
 
 import GuidePreview from "/public/images/main/guide/guide-preview.svg";
 
@@ -80,43 +81,54 @@ const Guides = () => {
   };
 
   return (
-    <div>
-      <Header />
-      <div className="px-5 2xl:px-44">
-        <div className="mx-auto mt-2 mb-20 xl:container 2xl:container 3xl:max-w-screen-2xl">
-          <div className="mt-5 flex flex-col items-center justify-between lg:flex-row-reverse">
-            <div className="max-w-lg xl:max-w-xl">
-              <Image src={GuidePreview} alt="guide" />
-            </div>
-            <div className="mt-12 lg:text-left">
-              <p className="mb-4 max-w-lg text-headThree font-bold leading-tight lg:text-headTwo">
-                Everything you need to know before choosing a career
-              </p>
-              <ul className="list-disc pl-5 text-bodyTwo font-normal leading-6 lg:text-bodyOne lg:leading-7">
-                <li>Understand the work </li>
-                <li>The challenges you&apos;ll encounter</li>{" "}
-                <li>Career path in that profession</li>
-              </ul>
-              {!paymentCaptured ? (
-                <button
-                  onClick={makePayment}
-                  className="mt-10 mr-4 rounded-xl bg-yellow bg-gradient-to-r from-yellow to-orange px-6 py-3 text-bodyTwo font-medium text-black duration-300 hover:-translate-y-1 hover:shadow-[0_10px_15px_-3px_rgba(255,192,51,0.5)]"
-                >
-                  Buy Now
-                </button>
-              ) : (
-                <a href="https://career.taxi/" target="_blank" rel="noreferrer">
-                  <button className="mt-8 mr-4 rounded-xl bg-yellow bg-gradient-to-r from-yellow to-orange px-6 py-3 text-bodyTwo font-medium text-black duration-300 hover:-translate-y-1 hover:shadow-[0_10px_15px_-3px_rgba(255,192,51,0.5)]">
-                    View Guides
+    <>
+      <Head>
+        <title>Career Taxi | Guide</title>
+        <meta name="description" content="About Us" />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
+      <div>
+        <Header />
+        <div className="px-5 2xl:px-44">
+          <div className="mx-auto mt-2 mb-20 xl:container 2xl:container 3xl:max-w-screen-2xl">
+            <div className="mt-5 flex flex-col items-center justify-between lg:flex-row-reverse">
+              <div className="max-w-lg xl:max-w-xl">
+                <Image src={GuidePreview} alt="guide" />
+              </div>
+              <div className="mt-12 lg:text-left">
+                <p className="mb-4 max-w-lg text-headThree font-bold leading-tight lg:text-headTwo">
+                  Everything you need to know before choosing a career
+                </p>
+                <ul className="list-disc pl-5 text-bodyTwo font-normal leading-6 lg:text-bodyOne lg:leading-7">
+                  <li>Understand the work </li>
+                  <li>The challenges you&apos;ll encounter</li>{" "}
+                  <li>Career path in that profession</li>
+                </ul>
+                {!paymentCaptured ? (
+                  <button
+                    onClick={makePayment}
+                    className="mt-10 mr-4 rounded-xl bg-yellow bg-gradient-to-r from-yellow to-orange px-6 py-3 text-bodyTwo font-medium text-black duration-300 hover:-translate-y-1 hover:shadow-[0_10px_15px_-3px_rgba(255,192,51,0.5)]"
+                  >
+                    Buy Now
                   </button>
-                </a>
-              )}
+                ) : (
+                  <a
+                    href="https://navgurukul.notion.site/Career-Options-3f9df72f2f0c473aa934463924db3626"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="mt-8 mr-4 rounded-xl bg-yellow bg-gradient-to-r from-yellow to-orange px-6 py-3 text-bodyTwo font-medium text-black duration-300 hover:-translate-y-1 hover:shadow-[0_10px_15px_-3px_rgba(255,192,51,0.5)]">
+                      View Guides
+                    </button>
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 
