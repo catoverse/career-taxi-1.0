@@ -42,14 +42,19 @@ const Header = () => {
               <a className="my-3 duration-100 hover:font-medium">IM Test</a>
             </Link>
           </li> */}
-            <li className="mx-10">
+            <li className="mx-6">
+              <Link href="/guides">
+                <a className="my-3 duration-100 hover:font-medium">Guides</a>
+              </Link>
+            </li>
+            <li className="mx-6">
               <Link href="/about">
                 <a className="my-3 duration-100 hover:font-medium">About Us</a>
               </Link>
             </li>
           </ul>
 
-          <div className="hidden text-right lg:block ">
+          <div className="ml-8 hidden text-right lg:block ">
             <a
               href="https://api.whatsapp.com/send?phone=+91-9168833977"
               target="_blank"
@@ -62,6 +67,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {/* Mobile */}
       <div
         className={
           "fixed top-0 right-0 h-screen bg-white px-5 py-6 pl-28 " +
@@ -81,6 +87,9 @@ const Header = () => {
             <a className="my-3">IM Test</a>
           </Link> */}
           <div className="flex flex-col">
+            <Link href="/guides">
+              <a className="my-3">Guides</a>
+            </Link>
             <Link href="/about">
               <a className="my-3">About Us</a>
             </Link>

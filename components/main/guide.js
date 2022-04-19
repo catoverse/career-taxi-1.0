@@ -14,7 +14,7 @@ const Guide = () => {
           </div>
           <div className="text-center lg:text-left">
             <p className="pt-5 text-headThree font-bold leading-snug lg:max-w-xl lg:text-headTwo lg:leading-tight">
-              Explore 40 career options for just ₹99 ✨
+              Explore 10 career options for just ₹99 ✨
             </p>
             <Link href="/guides">
               <button className="mt-10 mr-4 rounded-xl bg-yellow bg-gradient-to-r from-yellow to-orange px-6 py-3 text-bodyTwo font-medium text-black duration-300 hover:-translate-y-1 hover:shadow-[0_10px_15px_-3px_rgba(255,192,51,0.5)]">
