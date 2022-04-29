@@ -41,7 +41,7 @@ const Pricing = ({ enableJoin, onClick }) => {
               <div className="mr-2">
                 <Image src={Check} alt="check" />
               </div>
-              Explore 15 career options
+              Explore 8 career options
             </li>
             <li className="mb-1 flex items-center text-bodyThree lg:text-bodyTwo">
               <div className="mr-2">
