@@ -42,11 +42,11 @@ const Header = () => {
               <a className="my-3 duration-100 hover:font-medium">IM Test</a>
             </Link>
           </li> */}
-            <li className="mx-6">
+            {/* <li className="mx-6">
               <Link href="/guides">
                 <a className="my-3 duration-100 hover:font-medium">Guides</a>
               </Link>
-            </li>
+            </li> */}
             <li className="mx-6">
               <Link href="/about">
                 <a className="my-3 duration-100 hover:font-medium">About Us</a>
@@ -87,9 +87,9 @@ const Header = () => {
             <a className="my-3">IM Test</a>
           </Link> */}
           <div className="flex flex-col">
-            <Link href="/guides">
+            {/* <Link href="/guides">
               <a className="my-3">Guides</a>
-            </Link>
+            </Link> */}
             <Link href="/about">
               <a className="my-3">About Us</a>
             </Link>

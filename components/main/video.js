@@ -18,9 +18,9 @@ const Video = ({ setEnableJoin }) => {
           <Image src={Pattern} alt="pattern" />
         </div>
         <div className="absolute -bottom-16 left-1/2 right-1/2 -z-10 h-40 w-10/12 -translate-x-1/2 -translate-y-1/2 bg-yellow blur-3xl lg:-bottom-28 lg:h-96 2xl:-bottom-48 2xl:h-3/4 2xl:w-11/12"></div>
-        <p className="mb-8 text-center text-headThree font-bold ">
+        {/* <p className="mb-8 text-center text-headThree font-bold ">
           Watch how it works!
-        </p>
+        </p> */}
         <div className="aspect-video">
           <ReactPlayer
             style={{
@@ -35,7 +35,7 @@ const Video = ({ setEnableJoin }) => {
             url="https://www.youtube.com/watch?v=YHHK9AjDBO0"
           />
         </div>
-        {/* <p className="mt-8 text-center">Watch full video to Join!</p> */}
+        <p className="mt-8 text-center">Watch full video to Join!</p>
         <div className="absolute -bottom-6 -right-4 -z-10 w-12 lg:-right-8 lg:bottom-2 lg:w-24">
           <Image src={Pattern} alt="pattern" />
         </div>

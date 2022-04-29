@@ -39,7 +39,7 @@ const Hero = ({ enableJoin, onClick }) => {
                     Message Us
                   </button>
                 </a>
-                {/* <div className="relative">
+                <div className="relative">
                   <button
                     onClick={onClick}
                     disabled={!enableJoin}
@@ -58,7 +58,7 @@ const Hero = ({ enableJoin, onClick }) => {
                   <div className="absolute top-8 -right-40 hidden lg:block">
                     <Image src={BigArrow} alt="big arrow" />
                   </div>
-                </div> */}
+                </div>
               </div>
             </section>
           </div>

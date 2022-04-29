@@ -14,7 +14,7 @@ import Testimonial from "../components/main/testimonial.js";
 import Footer from "../components/commons/footer.js";
 
 export default function Home() {
-  const [enableJoin, setEnableJoin] = useState(true);
+  const [enableJoin, setEnableJoin] = useState(false);
   const [paymentCaptured, setPaymentCaptured] = useState(false);
 
   // const [windowWidth, setWindowWidth] = useState("");
@@ -59,7 +59,7 @@ export default function Home() {
       currency: data.currency,
       amount: data.amount,
       order_id: data.id,
-      description: "Thank you for your test donation",
+      description: "",
       image: "https://cdn.razorpay.com/logos/IwG1SmDFGznPEq_original.png",
       handler: function (response) {
         // Validate payment at server - using webhooks is a better idea.
@@ -113,8 +113,8 @@ export default function Home() {
       <Solution />
       <Expert />
       <Testimonial enableJoin={enableJoin} onClick={makePayment} />
-      <Guide />
-      {/* <Pricing enableJoin={enableJoin} onClick={makePayment} /> */}
+      {/* <Guide /> */}
+      <Pricing enableJoin={enableJoin} onClick={makePayment} />
       <Faq />
       <Footer />
       {/* <p className="fixed top-0 left-0 bg-yellow text-headThree">
