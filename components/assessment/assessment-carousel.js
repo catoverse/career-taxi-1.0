@@ -20,6 +20,7 @@ const AssessmentCarousel = () => {
     const questions = await getTestData();
     setQuestionData(questions);
     setIsLoading(false);
+    console.log(questions);
   };
 
   useEffect(() => {
@@ -28,11 +29,11 @@ const AssessmentCarousel = () => {
 
   const handleSubmit = (values) => {
     setAnswers(values);
+    console.log(answers, values);
     const omitIdx = values.answers.findIndex((v) => v === "0");
     if (omitIdx >= 0) {
       setCurrentSlide(omitIdx);
     }
-    console.log(answers);
   };
 
   const isFirstSlide = currentSlide === 0;

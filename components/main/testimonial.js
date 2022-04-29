@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import Thumb from "/public/images/main/testimonial/thumb.png";
 import Nandini from "/public/images/main/testimonial/nandini.jpeg";
@@ -57,7 +58,7 @@ const Testimonial = ({ enableJoin, onClick }) => {
                 <br />
                 explorers
               </div>
-              {/* {!enableJoin ? (
+              {!enableJoin ? (
                 <Link href="#video">
                   <a>
                     <button className="mt-10 flex items-center rounded-xl bg-yellow bg-gradient-to-r from-yellow to-orange px-6 py-3 text-bodyTwo font-medium text-black duration-300 hover:-translate-y-1 hover:shadow-[0_10px_15px_-3px_rgba(255,192,51,0.5)]">
@@ -76,8 +77,8 @@ const Testimonial = ({ enableJoin, onClick }) => {
                 >
                   Join Now
                 </button>
-              )} */}
-              <a
+              )}
+              {/* <a
                 href="https://api.whatsapp.com/send?phone=+91-9168833977"
                 target="_blank"
                 rel="noreferrer"
@@ -85,7 +86,7 @@ const Testimonial = ({ enableJoin, onClick }) => {
                 <button className="mt-10 mr-4 rounded-xl bg-yellow bg-gradient-to-r from-yellow to-orange px-6 py-3 text-bodyTwo font-medium text-black duration-300 hover:-translate-y-1 hover:shadow-[0_10px_15px_-3px_rgba(255,192,51,0.5)]">
                   Message Us
                 </button>
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="lg:col-span-2 lg:grid lg:grid-cols-2 lg:grid-rows-[1fr_400px_550px] lg:gap-5">
