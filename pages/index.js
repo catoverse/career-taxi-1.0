@@ -108,7 +108,11 @@ export default function Home() {
       </Head>
       <Header />
       <Hero enableJoin={enableJoin} onClick={makePayment} />
-      <Video setEnableJoin={setEnableJoin} />
+      <Video
+        onClick={makePayment}
+        enableJoin={enableJoin}
+        setEnableJoin={setEnableJoin}
+      />
       <Problem />
       <Solution />
       <Expert />
