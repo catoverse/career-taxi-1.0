@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import ReactPlayer from "react-player";
 
 import Pattern from "/public/images/main/video/bg-pattern.svg";
 
-const Video = ({ setEnableJoin }) => {
+const Video = ({ onClick, enableJoin, setEnableJoin }) => {
+  const [seconds, setSeconds] = useState("");
   const enableButton = (playedSeconds) => {
     if (playedSeconds.playedSeconds > 630) {
       setEnableJoin(true);
     }
+    setSeconds((630 - playedSeconds.playedSeconds).toFixed(0));
   };
 
   return (
@@ -35,7 +37,27 @@ const Video = ({ setEnableJoin }) => {
             url="https://www.youtube.com/watch?v=YHHK9AjDBO0"
           />
         </div>
-        <p className="mt-8 text-center">Watch full video to Join!</p>
+        <div className="mx-auto text-center">
+          {!enableJoin ? (
+            <p className="mt-8 text-center">
+              Watch full video to Join!{" "}
+              <span>Time Remaining: {seconds} seconds</span>
+            </p>
+          ) : (
+            <button
+              onClick={onClick}
+              disabled={!enableJoin}
+              className={
+                "mx-auto mt-10 mr-4 rounded-xl bg-yellow bg-gradient-to-r from-yellow to-orange px-6 py-3 text-bodyTwo font-medium text-black duration-300 " +
+                (enableJoin
+                  ? "hover:-translate-y-1 hover:shadow-[0_10px_15px_-3px_rgba(255,192,51,0.5)]"
+                  : "cursor-not-allowed opacity-50 hover:-translate-y-0 hover:shadow-none")
+              }
+            >
+              Join Now
+            </button>
+          )}
+        </div>
         <div className="absolute -bottom-6 -right-4 -z-10 w-12 lg:-right-8 lg:bottom-2 lg:w-24">
           <Image src={Pattern} alt="pattern" />
         </div>
