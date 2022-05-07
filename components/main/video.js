@@ -7,10 +7,10 @@ import Pattern from "/public/images/main/video/bg-pattern.svg";
 const Video = ({ onClick, enableJoin, setEnableJoin }) => {
   const [seconds, setSeconds] = useState("");
   const enableButton = (playedSeconds) => {
-    if (playedSeconds.playedSeconds > 630) {
+    if (playedSeconds.playedSeconds > 260) {
       setEnableJoin(true);
     }
-    setSeconds((630 - playedSeconds.playedSeconds).toFixed(0));
+    setSeconds((260 - playedSeconds.playedSeconds).toFixed(0));
   };
 
   return (
@@ -34,7 +34,7 @@ const Video = ({ onClick, enableJoin, setEnableJoin }) => {
             width="100%"
             height="100%"
             onProgress={enableButton}
-            url="https://www.youtube.com/watch?v=YHHK9AjDBO0"
+            url="https://www.youtube.com/watch?v=JD16JJkXLS4"
           />
         </div>
         <div className="mx-auto text-center">
