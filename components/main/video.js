@@ -7,10 +7,10 @@ import Pattern from "/public/images/main/video/bg-pattern.svg";
 const Video = ({ onClick, enableJoin, setEnableJoin }) => {
   const [seconds, setSeconds] = useState("");
   const enableButton = (playedSeconds) => {
-    if (playedSeconds.playedSeconds > 260) {
+    if (playedSeconds.playedSeconds > 251) {
       setEnableJoin(true);
     }
-    setSeconds((260 - playedSeconds.playedSeconds).toFixed(0));
+    setSeconds((251 - playedSeconds.playedSeconds).toFixed(0));
   };
 
   return (
