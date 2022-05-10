@@ -32,11 +32,11 @@ const Header = () => {
         </button>
         <div className="hidden lg:flex">
           <ul className="hidden items-center justify-center lg:flex">
-            {/* <li className="mx-4">
-            <Link href="#">
-              <a className="my-3 duration-100 hover:font-medium">Blog</a>
-            </Link>
-          </li> */}
+            <li className="mx-4">
+              <Link href="/blog">
+                <a className="my-3 duration-100 hover:font-medium">Blog</a>
+              </Link>
+            </li>
             {/* <li className="mx-4">
             <Link href="/assessment/assessment-test">
               <a className="my-3 duration-100 hover:font-medium">IM Test</a>
@@ -80,9 +80,7 @@ const Header = () => {
           <button className="my-2 mb-6" onClick={hamburgerHandler}>
             <Image src={Cross} alt="cross" />
           </button>
-          {/* <Link href="#">
-            <a className="my-3">Blog</a>
-          </Link> */}
+
           {/* <Link href="/assessment/assessment-test">
             <a className="my-3">IM Test</a>
           </Link> */}
@@ -90,6 +88,9 @@ const Header = () => {
             {/* <Link href="/guides">
               <a className="my-3">Guides</a>
             </Link> */}
+            <Link href="/blog">
+              <a className="my-3">Blog</a>
+            </Link>
             <Link href="/about">
               <a className="my-3">About Us</a>
             </Link>

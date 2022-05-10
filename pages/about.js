@@ -4,8 +4,8 @@ import Head from "next/head";
 import Header from "../components/commons/header.js";
 import AboutMain from "../components/about/about-main.js";
 import AboutTeam from "../components/about/about-team.js";
-import AboutAdvisors from "../components/about/about-advisors.js";
-import AboutSupported from "../components/about/about-supported.js";
+import AboutSupportedBy from "../components/about/about-supportedBy";
+import AboutPartner from "../components/about/about-partner.js";
 import Footer from "../components/commons/footer.js";
 
 const About = () => {
@@ -19,8 +19,8 @@ const About = () => {
       <Header />
       <AboutMain />
       <AboutTeam />
-      <AboutAdvisors />
-      <AboutSupported />
+      <AboutSupportedBy />
+      <AboutPartner />
       <Footer />
     </>
   );
