@@ -17,9 +17,9 @@ const FaqData = [
       "Are you yet to find your passion and are open to exploring various career options? If yes, the program is for you. \n Students right from the 8th grade to college students to working professionals, anyone can join the program as long as they are open to exploring one career option every week. If you are already in a field and you want to shift to a closely associated field,  we might not be a good fit for you. Let's say you are a software engineer and you want to become a product manager, you'll be much better suited to explore product management yourself. If you are open to exploring a diverse set of career options, we can definitely help",
   },
   {
-    heading: "Is it really just ₹1000 for the entire course? What’s the catch?",
+    heading: "Is it really just ₹999 for the entire course? What’s the catch?",
     content:
-      "Yes, we are undercharging because we want to help to help as many people as possible. If you are not comfortable paying money in the very beginning, you can choose to take a 1 week free trial. We understand that this is a new concept and you might need some time check if this is really useful for you. If you are not able to afford to pay ₹1000, you can choose to pay any amount you are comfortable with. You'll be able to explore 15 career options within this. The price is for the entire program. There are no packages. No extra charges will be charged per career option.",
+      "Yes, we are undercharging because we want to help as many people as possible. If you are not comfortable paying money in the very beginning, you can choose to take a 1 day FREE counseling session. We understand that this is a new concept and you might need some time check if this is really useful for you. If you are not able to afford to pay ₹999, you can choose to pay any amount you are comfortable with. You'll be able to explore 8 career options within this. The price is for the entire program. There are no packages. No extra charges will be charged per career option.",
   },
   {
     heading: "Are there live courses?",
@@ -46,7 +46,7 @@ const FaqData = [
   {
     heading: "How much time will the program take?",
     content:
-      "It depends on the number of career options you explore. You need one week to explore one career option. The recommended number of career options to explore is 10. For 10 career options, you'll need 10 weeks which is 2.5 months. If you are in a time crunch and you need to make a decision fast, WhatsApp us on +919168833977 and we'll arrange a faster way for you to explore.",
+      "It depends on the number of career options you explore. You need one week to explore one career option. The recommended number of career options to explore is 8. For 8 career options, you'll need 8 weeks which is 2 months. If you are in a time crunch and you need to make a decision fast, WhatsApp us on +919168833977 and we'll arrange a faster way for you to explore.",
   },
   {
     heading: "I’m in! How do I get started?",

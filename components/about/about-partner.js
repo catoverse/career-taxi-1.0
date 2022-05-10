@@ -4,13 +4,13 @@ import Image from "next/image";
 import Cato from "/public/images/about/cato-logo.png";
 import Navgurukul from "/public/images/about/navgurukul-logo.png";
 
-const AboutSupported = () => {
+const AboutPartner = () => {
   return (
     <div className="mb-24 px-5 pt-14 lg:pt-16 2xl:px-44">
       <div className="mx-auto xl:container 2xl:container 3xl:max-w-screen-2xl">
         <div className="mb-10">
           <p className="relative w-fit pb-2 text-headFour">
-            Supported by
+            Partnered with
             <span className="absolute bottom-3.5 -right-1 -z-10 h-2 w-14 bg-yellow"></span>
           </p>
         </div>
@@ -27,4 +27,4 @@ const AboutSupported = () => {
   );
 };
 
-export default AboutSupported;
+export default AboutPartner;
