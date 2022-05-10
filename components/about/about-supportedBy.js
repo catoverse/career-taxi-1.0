@@ -21,7 +21,7 @@ const AboutSupportedBy = () => {
         </div>
       </div>
       <div className="xl:pl-5 2xl:px-44">
-        <div className="mx-auto flex flex-row items-start overflow-x-auto pb-7 xl:container 2xl:container 2xl:mx-0 2xl:max-w-xl 2xl:justify-between 3xl:mx-auto 3xl:max-w-screen-2xl 3xl:justify-start">
+        <div className="mx-auto flex flex-row items-start overflow-x-auto pb-7 xl:container 2xl:container 2xl:mx-0 2xl:max-w-screen-md 2xl:justify-between 3xl:mx-auto 3xl:max-w-screen-2xl 3xl:justify-start">
           <div className="flex flex-col items-center justify-center pl-5 pr-7 xl:mr-16 xl:pr-0 xl:pl-0 2xl:pr-0">
             <div className="mb-5 w-32">
               <Image src={Aniruddha} alt="Aniruddha" />
@@ -44,12 +44,12 @@ const AboutSupportedBy = () => {
             </div>
             <p className="mb-1 text-bodyThree font-medium">Abhishek Gupta</p>
             <a
-              href="https://twitter.com/vanitypotato"
+              href="https://www.linkedin.com/in/abhishekgupta92/"
               target="_blank"
               rel="noreferrer"
               className="text-bodyThree font-normal opacity-50"
             >
-              Twitter
+              LinkedIn
             </a>
           </div>
           <div className="flex flex-col items-center justify-center pr-7 xl:mr-16 xl:pr-0 2xl:pr-0">
