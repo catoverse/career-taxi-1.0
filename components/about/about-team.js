@@ -28,13 +28,16 @@ const AboutTeam = () => {
               <Image src={Rutvij} alt="Rutvij" />
             </div>
             <p className="mb-1 text-bodyThree font-medium">Rutvij Karkhanis</p>
+            <p className="mb-1 text-bodyThree font-medium opacity-50">
+              Founder
+            </p>
             <a
-              href="https://twitter.com/rutvijkarkhanis"
+              href="https://www.linkedin.com/in/rutvijkarkhanis/"
               target="_blank"
               className="text-bodyThree font-normal opacity-50"
               rel="noreferrer"
             >
-              Twitter
+              LinkedIn
             </a>
           </div>
           <div className="flex flex-col items-center justify-center pr-7 xl:mr-16 xl:pr-0">
@@ -42,6 +45,9 @@ const AboutTeam = () => {
               <Image src={Parth} alt="Parth" />
             </div>
             <p className="mb-1 text-bodyThree font-medium">Parth Arya</p>
+            <p className="mb-1 text-bodyThree font-medium opacity-50">
+              Founder
+            </p>
             <a
               href="https://www.linkedin.com/in/parth-arya-ab1a07162/"
               target="_blank"
@@ -56,13 +62,16 @@ const AboutTeam = () => {
               <Image src={Sant} alt="Sant" />
             </div>
             <p className="mb-1 text-bodyThree font-medium">Sant Sharma</p>
+            <p className="mb-1 text-bodyThree font-medium opacity-50">
+              Founding Team
+            </p>
             <a
-              href="https://twitter.com/sntksh"
+              href="https://www.linkedin.com/in/sant-sharma-059723216/"
               target="_blank"
               className="text-bodyThree font-normal opacity-50"
               rel="noreferrer"
             >
-              Twitter
+              LinkedIn
             </a>
           </div>
 
@@ -71,6 +80,9 @@ const AboutTeam = () => {
               <Image src={Nandini} alt="Nandini" />
             </div>
             <p className="mb-1 text-bodyThree font-medium">Nandini Hirawat</p>
+            <p className="mb-1 text-bodyThree font-medium opacity-50">
+              Curator
+            </p>
             <a
               href="https://www.linkedin.com/in/nandini-hirawat-9aaaa218b/"
               target="_blank"
@@ -85,13 +97,16 @@ const AboutTeam = () => {
               <Image src={Prerna} alt="Prerna" />
             </div>
             <p className="mb-1 text-bodyThree font-medium">Prerna Rai</p>
+            <p className="mb-1 text-bodyThree font-medium opacity-50">
+              Content Head
+            </p>
             <a
-              href="https://twitter.com/rutvijkarkhanis"
+              href="https://www.instagram.com/pacophile04/"
               target="_blank"
               className="text-bodyThree font-normal opacity-50"
               rel="noreferrer"
             >
-              LinkedIn
+              Instagram
             </a>
           </div>
           <div className="flex flex-col items-center justify-center pr-7 xl:pr-0">
@@ -99,13 +114,16 @@ const AboutTeam = () => {
               <Image src={Ashwin} alt="Ashwin" />
             </div>
             <p className="mb-1 text-bodyThree font-medium">Ashwin Chauhan</p>
+            <p className="mb-1 text-bodyThree font-medium opacity-50">
+              Tech Head
+            </p>
             <a
-              href="https://twitter.com/ashwindevx"
+              href="https://www.linkedin.com/in/ashwin-chauhan-81b137147/"
               target="_blank"
               className="text-bodyThree font-normal opacity-50"
               rel="noreferrer"
             >
-              Twitter
+              LinkedIn
             </a>
           </div>
         </div>
