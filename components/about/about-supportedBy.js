@@ -58,12 +58,12 @@ const AboutSupportedBy = () => {
             </div>
             <p className="mb-1 text-bodyThree font-medium">Jay Kapoor</p>
             <a
-              href="https://twitter.com/Jaykapoor24"
+              href="https://www.linkedin.com/in/jaykapoor24/"
               target="_blank"
               rel="noreferrer"
               className="text-bodyThree font-normal opacity-50"
             >
-              Twitter
+              LinkedIn
             </a>
           </div>
           <div className="flex flex-col items-center justify-center pr-7 xl:mr-16 xl:pr-0 2xl:pr-0">
@@ -72,12 +72,12 @@ const AboutSupportedBy = () => {
             </div>
             <p className="mb-1 text-bodyThree font-medium">Rahul Garg</p>
             <a
-              href="https://twitter.com/rgxai"
+              href="https://www.linkedin.com/in/rgxai/"
               target="_blank"
               rel="noreferrer"
               className="text-bodyThree font-normal opacity-50"
             >
-              Twitter
+              LinkedIn
             </a>
           </div>
         </div>
