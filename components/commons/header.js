@@ -56,7 +56,7 @@ const Header = () => {
 
           <div className="ml-8 hidden text-right lg:block ">
             <a
-              href="https://api.whatsapp.com/send?phone=+91-9168833977"
+              href="https://wa.me/918446276959"
               target="_blank"
               rel="noreferrer"
             >
@@ -94,13 +94,15 @@ const Header = () => {
             <Link href="/about">
               <a className="my-3">About Us</a>
             </Link>
-            <Link href="#">
-              <a>
-                <button className="my-3 rounded-lg bg-yellow bg-gradient-to-r from-yellow to-orange px-4 py-2 text-bodyTwo font-medium text-black">
-                  Message Us
-                </button>
-              </a>
-            </Link>
+            <a
+              href="https://wa.me/918446276959"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="my-3 rounded-lg bg-yellow bg-gradient-to-r from-yellow to-orange px-4 py-2 text-bodyTwo font-medium text-black">
+                Message Us
+              </button>
+            </a>
           </div>
         </li>
       </div>

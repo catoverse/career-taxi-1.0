@@ -31,7 +31,7 @@ const Hero = ({ enableJoin, onClick }) => {
               </div>
               <div className="flex flex-row items-center">
                 <a
-                  href="https://api.whatsapp.com/send?phone=+91-9168833977"
+                  href="https://wa.me/918446276959"
                   target="_blank"
                   rel="noreferrer"
                 >

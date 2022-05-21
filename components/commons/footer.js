@@ -58,11 +58,11 @@ const Footer = () => {
           </ul>
           <ul className="mb-6 lg:mb-0">
             <li className="mb-2 text-bodyTwo font-semibold">Updates</li>
-            {/* <li className="mb-3 text-bodyTwo font-normal opacity-75">
-              <Link href="#">
+            <li className="mb-3 text-bodyTwo font-normal opacity-75">
+              <Link href="/blog">
                 <a>Blog</a>
               </Link>
-            </li> */}
+            </li>
             <li className="text-bodyTwo font-normal opacity-75">
               <Link href="/about">
                 <a>About Us</a>
@@ -113,8 +113,16 @@ const Footer = () => {
                 <Image src={Logo} alt="career taxi logo" />
               </div>
             </li>
-            <li className="text-bodyTwo font-normal opacity-75">
+            <li className="mb-4 text-bodyTwo font-normal opacity-75">
               © 2022 Career Taxi
+            </li>
+            <li className="mb-4 text-bodyTwo font-normal opacity-75">
+              D-902, Imperial Heights,
+              <br /> Landran-Kharar Road, Sector 115,
+              <br /> Mohali
+            </li>
+            <li className="text-bodyTwo font-normal opacity-75">
+              +91 8446276959
             </li>
           </ul>
         </div>
