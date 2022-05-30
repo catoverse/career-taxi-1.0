@@ -34,25 +34,20 @@ const AssessmentCarousel = () => {
     setAnswers(values);
     console.log(values,answers);
     const omitIdx = values.answers.findIndex((v) => v === "0");
-    if (omitIdx >= 0) {
+         console.log(omitIdx);
+    if (omitIdx !== 0 && omitIdx > 0) {
       setCurrentSlide(omitIdx);
     }
+    else{
     Router.push({
     pathname: '/assessment/assessment-result',
     query: { answers: values.answers },
 })
+    }
   };
   
   const validate = (field,value,shouldValidate) =>{
-                  console.log('field',field)
-    // questionData.map((question)=>{
-    //           if(question?.Reverse ==="Yes"){
-    //     if(value == 5){
-    //       value=1;
-    //     }
-    //   }
-    // })
-    // console.log('field',field)
+    console.log('field',field)
   }
 
   const isFirstSlide = currentSlide === 0;
