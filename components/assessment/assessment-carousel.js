@@ -35,7 +35,7 @@ const AssessmentCarousel = () => {
     console.log(values,answers);
     const omitIdx = values.answers.findIndex((v) => v === "0");
          console.log(omitIdx);
-    if (omitIdx !== 0 && omitIdx > 0) {
+    if ( omitIdx >= 0) {
       setCurrentSlide(omitIdx);
     }
     else{
