@@ -24,7 +24,6 @@ const AssessmentResult = () => {
     }
     console.log(sum);
    let percentage =((sum/120)*100).toFixed(2); 
-   let average = (sum/24).toFixed(2);
   return(
   <>
     <Header />
@@ -33,8 +32,6 @@ const AssessmentResult = () => {
       <p className="text-8xl font-extrabold leading-8 border-b border-black border-solid">Result Card</p>
       <p className="text-8xl font-extrabold leading-8">Percentage scored</p>
       <div className="text-2xl font-extrabold leading-7">{percentage}%</div>
-      <p className="text-8xl font-extrabold leading-8">Average Score</p>
-      <div className="text-2xl font-extrabold leading-7">{average}</div>
     </div>
     </div>
     <Footer />
