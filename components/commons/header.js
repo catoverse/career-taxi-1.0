@@ -33,15 +33,16 @@ const Header = () => {
         <div className="hidden lg:flex">
           <ul className="hidden items-center justify-center lg:flex">
             <li className="mx-4">
-              <Link href="/blog">
-                <a className="my-3 duration-100 hover:font-medium">Blog</a>
+              <Link href="/assessment/assessment-test">
+                <a className="my-3 duration-100 hover:font-medium">IM Test</a>
               </Link>
             </li>
-            {/* <li className="mx-4">
-            <Link href="/assessment/assessment-test">
-              <a className="my-3 duration-100 hover:font-medium">IM Test</a>
-            </Link>
-          </li> */}
+            <li className="mx-4">
+              <Link href="/blog">
+                <a className="my-3 duration-100 hover:font-medium">Resources</a>
+              </Link>
+            </li>
+
             {/* <li className="mx-6">
               <Link href="/guides">
                 <a className="my-3 duration-100 hover:font-medium">Guides</a>
@@ -81,15 +82,15 @@ const Header = () => {
             <Image src={Cross} alt="cross" />
           </button>
 
-          {/* <Link href="/assessment/assessment-test">
-            <a className="my-3">IM Test</a>
-          </Link> */}
           <div className="flex flex-col">
+            <Link href="/assessment/assessment-test">
+              <a className="my-3">IM Test</a>
+            </Link>
             {/* <Link href="/guides">
               <a className="my-3">Guides</a>
             </Link> */}
             <Link href="/blog">
-              <a className="my-3">Blog</a>
+              <a className="my-3">Resources</a>
             </Link>
             <Link href="/about">
               <a className="my-3">About Us</a>

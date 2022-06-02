@@ -59,8 +59,8 @@ const Footer = () => {
           <ul className="mb-6 lg:mb-0">
             <li className="mb-2 text-bodyTwo font-semibold">Updates</li>
             <li className="mb-3 text-bodyTwo font-normal opacity-75">
-              <Link href="/blog">
-                <a>Blog</a>
+              <Link href="/resources">
+                <a>Resources</a>
               </Link>
             </li>
             <li className="text-bodyTwo font-normal opacity-75">
