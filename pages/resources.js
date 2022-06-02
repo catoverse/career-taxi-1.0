@@ -7,7 +7,6 @@ import Header from "../components/commons/header.js";
 import Footer from "../components/commons/footer.js";
 
 export default function Home({ posts }) {
-  console.log(posts);
   const options = {
     year: "numeric",
     month: "long",

@@ -6,9 +6,7 @@ import { Formik, Field, FieldArray, Form } from "formik";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import AssessmentRadio from "./assessment-radio.js";
 import getTestData from "../../queries/get-test-data";
-import Router from 'next/router'
-
-
+import Router from "next/router";
 
 import Arrow from "/public/images/test/arrow-left.svg";
 
@@ -23,7 +21,7 @@ const AssessmentCarousel = () => {
     const questions = await getTestData();
     setQuestionData(questions);
     setIsLoading(false);
-    console.log(questions);
+    // console.log(questions);
   };
 
   useEffect(() => {
@@ -32,23 +30,22 @@ const AssessmentCarousel = () => {
 
   const handleSubmit = (values) => {
     setAnswers(values);
-    console.log(values,answers);
+    // console.log(values, answers);
     const omitIdx = values.answers.findIndex((v) => v === "0");
-         console.log(omitIdx);
-    if ( omitIdx >= 0) {
+    // console.log(omitIdx);
+    if (omitIdx >= 0) {
       setCurrentSlide(omitIdx);
-    }
-    else{
-    Router.push({
-    pathname: '/assessment/assessment-result',
-    query: { answers: values.answers },
-})
+    } else {
+      Router.push({
+        pathname: "/assessment/assessment-result",
+        query: { answers: values.answers },
+      });
     }
   };
-  
-  const validate = (field,value,shouldValidate) =>{
-    console.log('field',field)
-  }
+
+  const validate = (field, value, shouldValidate) => {
+    // console.log("field", field);
+  };
 
   const isFirstSlide = currentSlide === 0;
   const isLastSlide = currentSlide === questionData.length - 1;
@@ -155,8 +152,9 @@ const AssessmentCarousel = () => {
             "0",
           ],
         }}
-        onSubmit={(values) => handleSubmit(values)} >
-          {({ errors, values, touched, setValues }) => (
+        onSubmit={(values) => handleSubmit(values)}
+      >
+        {({ errors, values, touched, setValues }) => (
           <Form>
             <FieldArray name="answers">
               <Carousel
@@ -195,7 +193,7 @@ const AssessmentCarousel = () => {
               Submit
             </button>
           </Form>
-          )}
+        )}
       </Formik>
     </div>
   );
