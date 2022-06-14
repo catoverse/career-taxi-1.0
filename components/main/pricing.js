@@ -21,7 +21,7 @@ const Pricing = ({ enableJoin, onClick }) => {
         <div className="absolute -bottom-64 left-1/2 right-1/2 -z-10 h-5/6 w-10/12 -translate-x-1/2 -translate-y-1/2 bg-yellow blur-3xl lg:w-11/12"></div>
         <div className="mb-14 flex items-end">
           <p className="bg-gradient-to-r from-yellow to-orange bg-clip-text pr-2 text-headTwo font-semibold leading-none text-transparent lg:text-headOne lg:font-bold">
-            ₹1999
+            ₹2999
           </p>
           {/* <span className="relative">
             <div className="absolute -right-5 w-20 lg:-right-10 lg:w-28">
