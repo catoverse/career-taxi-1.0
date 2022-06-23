@@ -19,7 +19,7 @@ const FaqData = [
   {
     heading: "Is it really just ₹2999 for the entire course? What’s the catch?",
     content:
-      "Yes, we are undercharging because we want to help as many people as possible. If you are not comfortable paying money in the very beginning, you can choose to take a 1 day FREE counseling session. We understand that this is a new concept and you might need some time check if this is really useful for you. If you are not able to afford to pay ₹1999, you can choose to pay any amount you are comfortable with. You'll be able to explore 8 career options within this. The price is for the entire program. There are no packages. No extra charges will be charged per career option.",
+      "Yes, we are undercharging because we want to help as many people as possible. If you are not comfortable paying money in the very beginning, you can choose to take a 1 day FREE counseling session. We understand that this is a new concept and you might need some time check if this is really useful for you. If you are not able to afford to pay ₹2999, you can choose to pay any amount you are comfortable with. You'll be able to explore 8 career options within this. The price is for the entire program. There are no packages. No extra charges will be charged per career option.",
   },
   {
     heading: "Are there live courses?",
